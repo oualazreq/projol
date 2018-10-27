@@ -1,0 +1,172 @@
+/*****************************************************************
+CSS Agency
+*****************************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+/*table {border-collapse: collapse;border-spacing: 0;} */
+iframe {border: 0;background: none;}
+a{text-decoration: none;}
+.clear:after {content:' ';clear:both;display:block;font-size:0;line-height:0;overflow:hidden;}
+.clear-both {clear:both;*float: none !important;*clear: none !important}
+@font-face {
+    font-family: 'lobster_1.4regular';
+    src: url('font/lobster_1_4-webfont.eot');
+    src: url('font/lobster_1_4-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/lobster_1_4-webfont.woff2') format('woff2'),
+         url('font/lobster_1_4-webfont.woff') format('woff'),
+         url('font/lobster_1_4-webfont.ttf') format('truetype'),
+         url('font/lobster_1_4-webfont.svg#lobster_1.4regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*specific styles***************************************************/
+
+
+#main{margin: auto 0;width:1399px; }
+body{background: url('bg/fond.jpg') no-repeat;}
+
+/**************** header ****************************/
+
+.headertop{float: left;background: url('bg/top.jpg') repeat-x; padding:0 490px 0 360px;}
+.logo{position: absolute;float: left;top: 4px;left: 213px;}
+.headertop >ul >li{float: left;}
+.nav1> a{display: block;float: left;text-transform: capitalize;font-size: 10px;color: white;font-weight: bold;padding:7px 16px 8px 16px;background: url('bg/separator.png') no-repeat 100% 7px; }
+.aide> a{display: block;float: left;text-transform: capitalize;font-size: 10px;color: white;font-weight: bold; padding:7px 16px 8px 23px;background: url('bg/separator.png') no-repeat 100% 7px,url('bg/aide.png') no-repeat 0 7px;  }
+.monpanier> a{display: block;float: left;text-transform: capitalize;font-size: 10px;color: white;font-weight: bold; padding:7px 16px 8px 40px;background: url('bg/panier.png') no-repeat 9px 3px; }
+
+
+.headerbottom {float: left; padding:46px 250px 0 390px; background: url('bg/header.png') repeat-x;}
+.headerbottom >ul >li {float: left;}
+.nav2 {display: block;float: left;margin: 0 2px 0 0;padding:8px 12px 8px 12px;color: white;text-transform: uppercase;font-size: 13.8px; font-family: Myriad Pro; font-weight: bold;border: 1px solid black; border-radius: 12px 12px 0 0; background-image: linear-gradient(to bottom, gray 25%, black 100%)}
+.espaceclient {display: block;float: left;margin: 0 10px 0 10px;padding:9px 12px 18px 12px;margin-top:-15px;color: white;text-transform: uppercase;font-size: 13.8px; font-family: arial; font-weight: bold;border: 1px solid #cc3333; border-radius: 12px 12px 0 0; background: #cc3333;}
+
+#sousmenu1 >ul {display: block;}
+.espaceli #sousmenu1>ul {display: block;}
+.espaceli #sousmenu1{display :block;float: left;background: url('bg/sousmenu.png') no-repeat;border-radius: 5px;position: absolute;margin:27px 210px 0 -655px;width: 982px;padding:7px 0 5px 16px; }
+.espaceli  #sousmenu1>ul >li {float: left;display: block;}
+.espaceli .navnav2 {display: block;float: left;color: black;text-transform: uppercase;font-size: 12px; font-family: Myriad Pro; font-weight: bold;padding: 0 9px 0 9px;background: url('bg/separator2.png') no-repeat 100% 0px;}
+.espaceli .adsl1 {display: block;float: left;color: white;text-transform: uppercase;font-size: 12px; font-family: Myriad Pro; font-weight: bold;padding: 0 9px 0 9px;background: url('bg/separator2.png') no-repeat 100% 0px;}
+.espaceli .navverylounge {display: block;float: left; padding: 0 0 0 11px;color: black;text-transform: uppercase;font-size: 12px; font-family: Myriad Pro; font-weight: bold;}
+
+#sousmenu2 >ul {display: block;}
+.adsl #sousmenu2>ul {display: block;}
+.adsl #sousmenu2{display :block;float: left;position: absolute; margin:15px 0px 0 -338px;width: 1085px;padding:8px 0px 9px 338px;border: 1px solid #ededed;background-image: linear-gradient(to top, #dadada 0%, white 50%);}
+.adsl #sousmenu2 >ul >li {float: left; display: block;}
+.adsl .navnavnav2 {display: block;float: left; color: gray;text-transform: uppercase;font-size: 12px; font-family: Myriad Pro; font-weight: normal;padding: 8px 16px 9px 16px;background: url('bg/separator3.png') no-repeat 100% 0px;}
+.adsl .formule{display: block;float: left; color: gray;text-transform: uppercase;font-size: 12px; font-family: Myriad Pro; font-weight: normal;padding: 8px 16px 9px 16px;background: url('bg/separator3.png') no-repeat 100% 0px;background-image: linear-gradient(to bottom, #dadada 15%, white 85%);}
+.adsl .info{display: block;float: left; padding: 8px 16px 9px 16px;color: gray;text-transform: uppercase;font-size: 12px; font-family: Myriad Pro; font-weight: normal;background: url('bg/separator3.png') no-repeat 100% 0px,url('bg/separator3.png') no-repeat 0% 0px;}
+
+/*************************** contenu gauche***************************************/
+
+#navcontent{float: left;margin:80px 0 0 211px;padding: 12px 0 12px 10px; width: 160px;border: 1px solid #ededed;border-radius: 0 15px 15px 0;background-image: linear-gradient(to top, #dadada 0%, white 85%);}
+#navcontent >ul >li {float: left;}
+.messagerie {float: left;color: #cc0000;text-transform: uppercase;font-size: 9px;font-family: arial;font-weight: bold;padding: 12px 0 12px 0px;}
+.gerer {float: left;color: #666666;text-transform: uppercase;font-size: 9px;font-family: arial;font-weight: bold;padding: 12px 0 12px 0px;background: url('bg/separator4.png') no-repeat 100% 0px;}
+
+/***************************contenu au milieu************************************/
+
+#maincontent{float: left;margin:80px 0 0 16px;position: relative;}
+#headercontent{float: left;color: #666666;text-transform: uppercase;font-size: 13px;font-family: arial;font-weight: bold;}
+
+#section1{float: left;margin: 33px 0 0 0px;width: 518px;border: 1px solid #ededed;border-radius: 15px;background: #ededed;position: absolute;}
+.mail{float: left;color: #cc3333;text-transform: capitalize;font-size: 25px;font-family: 'lobster_1.4regular' ;font-weight: normal;margin: -15px 0 0 11px;}
+#divsection1{float: left;margin:18px 10px 11px 10px;width: 497px;border: 1px solid #ededed;background: white;}
+#divsection1 h2{float: left;padding: 13px 0 0 10px;color: #333333;text-transform: normal;font-size: 12px;font-family: arial;font-weight: bold;}
+#divsection1 p{float: left;padding: 8px 0 0 10px;color: #333333;text-transform: normal;font-size: 12px;font-family: arial;font-weight: normal;}
+#divsection1 >input{float: left;margin: 10px 0 12px 10px;color: #ffffff;text-transform: normal;font-size: 12px;font-family: arial;font-weight: bold;background: #cc3333;border-radius: 10px;padding: 5px 8px 5px 8px;}
+
+#section2{float: left;margin: 212px 0 0 0px;width: 518px;border: 1px solid #ededed;border-radius: 15px;background: #ededed;position: absolute;}
+.vocale{float: left;color: #cc3333;text-transform: capitalize;font-size: 25px;font-family: 'lobster_1.4regular' ;font-weight: normal;margin: -15px 0 0 11px;}
+.ligne{float: left;display: block;margin: 28px 0 0 -305px;color: #333333;text-transform: normal;font-size: 12px;font-family: arial;font-weight: normal;}
+#section2 >input{float: left;display: block;margin: 5px 0px 0 432px;color: #ffffff;text-transform: capitalize;font-size: 11px;font-family: arial;font-weight: bold;background: #cc3333;border-radius: 10px;padding: 5px 8px 5px 8px;}
+#divsection2{float: left;margin:16px 11px 0 11px;width: 499px;border: 1px solid #ededed;background: white;}
+.l1{float: left;margin: 12px 0 0 13px;color: #333333;text-transform: normal;font-size: 12px;font-family: arial;font-weight: bold;}
+.l2{float: left;margin: 29px 0 0 -118px;color: #333333;text-transform: normal;font-size: 12px;font-family: arial;font-weight: normal;}
+#divsection2 table {float: left;margin: 9px 11px 0 13px; border: 1px solid silver;}
+#supprimer{float: left;display: block;margin: 10px 0 12px 13px;color: #ffffff;text-transform: capitalize;font-size: 11px;font-family: arial;font-weight: bold;background: #cc3333;border-radius: 10px;padding: 5px 8px 4px 8px;}
+#div2section2{float: left;margin:9px 11px 0px 11px;width: 499px;border: 1px solid #ededed;background: white;}
+.p1{float: left;margin: 13px 0 0 13px;color: #333333;text-transform: normal;font-size: 12px;font-family: arial;font-weight: bold;}
+.p2{float: left;margin: 29px 0 0 -112px;color: #333333;text-transform: normal;font-size: 12px;font-family: arial;font-weight: normal;}
+.p3{float: left;margin: 77px 0 14px -375px;color: #333333;text-transform: normal;font-size: 12px;font-family: arial;font-weight: normal;}
+.last{float: left;margin: 11px 0 15px 332px;color: #cc3333;text-transform: capitalize;font-size: 11.83px;font-family: arial;font-weight: bold;background: url('bg/pictolast.png') no-repeat  0% 5px; padding: 0 5px 0 10px;}
+table {border-collapse:collapse;}
+th, td {border:1px solid silver;}
+th{color: black;background: #ededed;}
+td {text-align:center;}
+caption {font-weight:bold}
+.num{color: #cc3333;font-weight: bold;}
+
+/***************************Contenu droite************************************/
+
+aside{float: left;margin: 80px 0 0 448px;width: 242px;border: 1px solid #ededed;border-radius: 15px;background: #ffffff;background-image: linear-gradient(to top, #ededed 0%, white 100%);}
+.deconnexion{float: left;padding: 13px 0 0 142px;text-decoration : underline;color: #cc3333;text-transform: capitalize;font-size: 10px;font-family: arial;font-weight: bold;}
+.bienvenue{float: left;padding: 5px 0 0 25px;color: #cc3333;text-transform: capitalize;font-size: 25px;font-family: 'lobster_1.4regular';font-weight: normal;}
+.nom{float: left;padding: 7px 0 0 25px;color: #000000;text-transform: capitalize;font-size: 17px;font-family: arial;font-weight: bold;}
+.tel{float: left;padding: 5px 0 0 25px;color: #999999;text-transform: capitalize;font-size: 18px;font-family: arial;font-weight: bold;}
+.adresse{float: left;padding: 5px 0 0 25px;color: #999999;text-transform: capitalize;font-size: 13.57px;font-family: arial;font-weight: bold;}
+#consultation{float: left;display: block;margin: 10px 0 0 25px;color: #ffffff;text-transform: capitalize;font-size: 12px;font-family: arial;font-weight: bold;background: #cc3333;border-radius: 10px;padding: 7px 8px 7px 8px;}
+.info{float: left;padding: 13px 0 0 25px;color: #cc3333;text-transform: capitalize;font-size: 12px;font-family: arial;font-weight: bold;background: url('bg/pictolast.png') no-repeat  13px 17px;}
+.motdepasse{float: left;padding: 6px 0 0 25px;color: #cc3333;text-transform: capitalize;font-size: 12px;font-family: arial;font-weight: bold;background: url('bg/pictolast.png') no-repeat  13px 9px;}
+.etoile{padding: 23px 10px 0 10px;}
+.espace{float: left;padding: 8px 0 0 36px;color: #000000;text-transform: uppercase;font-size: 10px;font-family: arial;font-weight: normal;}
+.recherche{width: 170px; height: 23px;border-radius: 10px;background:#f1f1f1;margin: 10px 0 0 25px;}
+#OK{float: left;display: block;margin: -30px 0 0 192px;color: #ffffff;text-transform: uppercase;font-size: 12px;font-family: arial;font-weight: bold;background: #cc3333;border-radius: 10px;padding: 3px 5px 4px 5px;}
+.verylounge{padding: 16px 21px 0 21px; position: relative; z-index: 1}
+#pimage{float: left;margin:-61px 21px 0 21px;border:1px solid #ededed;background: url('bg/back.png') no-repeat; width: 199px; height: 61px;position: relative;z-index: 2; }
+.pimage1{float: left;color: #ffffff;font-size: 12.5px;font-family: arial;font-weight: bold; padding: 11px 0 0 31px;}
+.pimage2{float: left;color: #ffffff;font-size: 12.5px;font-family: arial;font-weight: bold;padding: 8px 0 0 7px;}
+#assistant{float: left;margin: 20px 21px 0 21px;border-radius: 10px; background: #cc3333;border: 1px solid #cc3333;}
+.assistance{float: left;padding: 5px 0 0 12px;color: #ffffff;text-transform: capitalize;font-size: 41.14px;font-family: 'lobster_1.4regular';font-weight: normal;}
+.mobile1{float: left;padding: 10px 0 0 25px;color: #ffffff;text-transform: normal;font-size: 10.92px;font-family: arial;font-weight: bold;}
+.mobile{float: left;padding: 8px 0 0 25px;color: #ffffff;text-transform: normal;font-size: 10.92px;font-family: arial;font-weight: bold;}
+.mobilelast{float: left;padding: 8px 0 32px 25px;color: #ffffff;text-transform: normal;font-size: 10.92px;font-family: arial;font-weight: bold;}
+#acces{float: left;margin: -19px 37px 170px 37px;border-radius: 10px; background: #cc3333;border: 1px solid gray; width: 166px;}
+.acceder{float: left;padding: 6px 0 0 20px;color: white;text-transform: normal;font-size: 10.92px;font-family: arial;font-weight: bold;}
+.virgin{float: left;padding: 3px 0 0 37px;color: #000000;text-transform: uppercase;font-size: 10.92px;font-family: arial;font-weight: bold;}
+
+/***************************footer************************************/
+footer{float: left;padding:75px 0 0 0;width: 1399px;margin-top: 85px;background: url('bg/footer.jpg');background-repeat:repeat-x;}
+#footer > ul > li{float:left;margin:0px 41px 3px 0px}
+#footer > ul {margin:0 auto;width:999px;}
+.logofoot {float: left;position: absolute;margin: -95px 0 0 1050px;}
+.foot1{color: white;text-transform: capitalize;font-size: 15px;font-family: arial;font-weight: bold;display:block;}
+.foot2{color: white;text-transform: capitalize;font-size: 10.92px;font-family: arial;font-weight: normal;padding: 5px 0 0 0;}
+.special {margin-top: 18px;margin-bottom: 5px;}
+.twiter{background: url('bg/twiter.png') no-repeat;}
+.twiter a{margin-left:20px;}
+.rss{background: url('bg/rss.png') no-repeat;}
+.rss a{margin-left:20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

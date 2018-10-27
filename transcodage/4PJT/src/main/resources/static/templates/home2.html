@@ -1,0 +1,161 @@
+
+<div id="wrapper">
+    <transcode-menu></transcode-menu>
+    <div id="page-wrapper" ng-controller="home as home" nv-file-drop="" uploader="uploader" filters="queueLimit, customFilter">
+
+        <div class="container-fluid">
+
+            <!-- Page Heading -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">
+                        Converter
+                    </h1>
+                    <ol class="breadcrumb">
+                        <li>
+                            <i class="fa fa-dashboard"></i>  <a href="#">Dashboard</a>
+                        </li>
+                        <li class="active">
+                            <i class="fa fa-table"></i> Converter
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row" ng-if="!spaceIsSufficient">
+                <div class="col-lg-12" >
+                    <div class="alert alert-info alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <i class="fa fa-info-circle"></i>  <strong>YOU DO NOT HAVE ENOUGH SPACE REMAINING !!! </strong> Buy more or delete some files please
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" ng-if="showConvertMessage">
+                <div class="col-lg-12" >
+                    <div class="alert alert-info alert-dismissable">
+                        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                        <i class="fa fa-info-circle"></i>  <strong>Your convertion start !!!   </strong> you'll get a mail as soon as it's finished
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-lg-4">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="panel-title">Upload your video</h3>
+                        </div>
+                        <div class="panel-body">
+                            <input type="file" nv-file-select="" uploader="uploader" multiple  /><br/>
+                            <div id="infos"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-8" >
+                    <h2>Upload queue</h2>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover table-striped">
+                            <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>size</th>
+                                <th>Actions</th>
+                                <th ng-if="afterPay">Convert To</th>
+                            </tr>
+                            </thead>
+                            <tbody >
+                            <tr ng-repeat="item in uploader.queue" ng-if="controller.isVideo(item)" >
+
+                                <td>{{item._file.name}}</td>
+                                <td >{{ item.file.size/1024/1024|number:2 }} Mb</td>
+                                <td>
+
+                                    <button class="btn btn-warning btn-xs" ng-click="item.cancel()">cancel</button>
+                                    <button class="btn btn-danger btn-xs" ng-click="item.remove()">remove</button>
+
+                                    <!--<ngcart-addtocart id="{{$index}}" class="btn btn-default btn-xs" name="{{ item.file.name}}" price="40" quantity="1" quantity-max="30" data="item">Add to cart</ngcart-addtocart>-->
+
+                                </td>
+                                <td  ng-if="afterPay">
+
+                                    <form>
+
+                                        <input type="hidden" ng-model="convertModel.fromFile" value="{{item.file.name}}" ng-init="convertModel.fromFile=item.file.name"/>
+
+
+                                        <select ng-model="convertModel.toFormat">
+                                            <option ng-repeat="format in home.formats" value="{{format}}">{{format}}</option>
+                                        </select>
+                                        <button class="btn btn-danger btn-xs" ng-click="convert()">Go</button>
+                                    </form>
+                                </td>
+
+                            </tr>
+
+                            </tbody>
+
+                        </table>
+
+                        <div>
+                            Upload progress:
+                            <div class="progress" style="">
+                                <div class="progress-bar" role="progressbar" ng-style="{ 'width': uploader.progress + '%' }"></div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-success btn-s" ng-click="uploader.uploadAll()" ng-disabled="!uploader.getNotUploadedItems().length || !spaceIsSufficient">
+                            <span class="glyphicon glyphicon-upload"></span> Upload
+                        </button>
+
+                        <button ng-if="!hideUploadAndPrice" class="btn btn-primary" stripe-checkout="home.doCheckout"
+                                data-key="pk_test_eY5uvZWmoacYAsjn88HQfpAw"
+                                data-name="Transcode"
+                                data-description=""
+                                data-currency="eur"
+                                data-amount="{{(home.items_price*100)}}">
+                            Pay and go {{home.items_price|number:2}}
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Converted files</h2>
+                    <div class="table-responsive">
+                        <table class="table table-hover table-striped">
+                            <thead>
+                            <tr>
+                                <th>id</th>
+                                <th>Date</th>
+                                <th>Name</th>
+                                <th>Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="convertedVideo in convertedVideos">
+                                <td>{{convertedVideo.id}}</td>
+                                <td>{{convertedVideo.date}}</td>
+                                <td>{{convertedVideo.name}}</td>
+                                <td>
+                                    <button class="btn btn-warning btn-xs" ng-click="home.download(convertedVideo.name)">download</button>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <uib-pagination total-items="convertedVideos.length" ng-model="3" items-per-page="2"></uib-pagination>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>

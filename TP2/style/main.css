@@ -1,0 +1,108 @@
+/*****************************************************************
+CSS Agency
+*****************************************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+/*table {border-collapse: collapse;border-spacing: 0;} */
+iframe {border: 0;background: none;}
+a{text-decoration: none;}
+.clear:after {content:' ';clear:both;display:block;font-size:0;line-height:0;overflow:hidden;}
+.clear-both {clear:both;*float: none !important;*clear: none !important}
+@font-face {
+	font-family: 'texgyreherosbold';
+	src: url('font/texgyreheros-bold-webfont.eot');
+	src: url('font/texgyreheros-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('font/texgyreheros-bold-webfont.woff2') format('woff2'),
+		 url('font/texgyreheros-bold-webfont.woff') format('woff'),
+		 url('font/texgyreheros-bold-webfont.ttf') format('truetype'),
+		 url('font/texgyreheros-bold-webfont.svg#texgyreherosbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/*specific styles***************************************************/
+#main{margin:0 auto;width: 950px;}
+body{background: url('bg/fond1.png') no-repeat center center;font-family:'texgyreherosbold';font-size: 12px;font-weight: normal;text-transform: none;}
+/*****************************HEADER******************************/
+#headertop{margin: 22px 0 0 0;}
+.logo{float: left;margin:0;}
+h1{display: block;float: left;text-transform: uppercase;font-family:'texgyreherosbold';font-size: 16px;color: black;font-weight: normal;padding:15px 0 0 17px; }
+.recherche{float: left;display: block;width: 169px; height: 19px;border-radius: 3px;margin: 13px 0 0 158px;border: 1px solid gray;}
+.OK{float: left;display: block;margin: 13px 13px 0 3px;width: 27px; height: 23px;background: url('bg/recherche.png') no-repeat 5px 2px; border-radius: 3px;border: 1px solid gray;}
+
+#menu {padding-top: 70px;}
+#menu >ul {display:table;border-radius: 5px;background: #005a9f url('bg/backmenu.png') repeat-x 0 0;}
+#menu >ul >li{display: table-cell; vertical-align:middle; border-right:1px solid #ffffff;}
+#menu >ul >li >a{display: block;color: #ffffff;padding:13px 4px;}
+#menu >ul >li a.pieces{border:none;padding-left: 10px;}
+#menu >ul >li a.partenaire{border:none;}
+/*****************************Content******************************/
+
+#slider{width: 705px;height: 275px;margin: 12px 0 0 0;}
+#section1{width: 342px;float: left;display: block;margin-top: 23px;border: 1px solid silver;border-radius: 5px;background:#ffffff;}
+#section2{width: 342px;float: left;display: block;margin: 23px 0 0 15px;border: 1px solid silver;border-radius: 5px;background: #ffffff;}
+#article1 h2{position:absolute;  text-transform: uppercase;font-family:'texgyreherosbold';font-size: 12px;color: #cc0033;font-weight: normal;padding:14px 0 0 11px;}
+#article1 .para{line-height: 14px;position: absolute; text-transform: none;font-family: arial;font-size: 12px;color: #000000;font-weight: normal;padding:47px 0 0 11px;}
+.last{text-transform: none;font-family: Arial;font-size: 12px;color: #003366;font-weight: normal;margin:10px 0 -3px 0;opacity : 0.5;padding:4px 0 8px 14px;background: url('bg/backsection.png') no-repeat,url('bg/picto.png') no-repeat 100% 0px;}
+.image{position:relative;float: left;padding: 11px 10px 0 161px;display: inline;}
+ .p1{display:block;line-height: 14px;text-transform: none;font-family: arial;font-size: 12px;color: #000000;font-weight: normal;padding:134px 0 0 11px;}
+
+aside{ margin-left: 16px;border: 1px solid silver;border-radius: 5px;width: 223px;display: inline-block;float: left;margin-top: -275px;}
+.asideimg2{margin-top: -3px;}
+.asideimg1{border-radius: 5px 5px;}
+#text {background:#005d99 url('bg/fond_aside.png') repeat-x;height: 125px; }
+#text .asidetext{line-height: 14px;display: block;text-transform: none; font-family: Arial;font-size: 12px;color: #ffffff;font-weight: bold;padding:11px 31px 0 16px; }
+#text .recherche1{float: left;display: block;width: 131px; height: 17px;border-radius: 3px;margin: 11px 0 0 17px;border: 1px solid gray;}
+#text .OK1{float: left;display: block;margin: 11px 40px 0 6px;width: 24px; height: 22px;background: url('bg/recherche1.png') no-repeat 0px 0px; border-radius: 3px;border: 1px solid gray;}
+
+#section3{width: 223px;float: left;display: block;margin-top: 20px;border: 1px solid silver;border-radius: 5px;background: #ffffff;margin-left: 16px;}
+.sec3{border-radius: 5px 5px;}
+#section3 h2{text-transform: uppercase;font-size: 12px;color: #cc0033;font-weight: bold;font-family: Arial;padding:12px 0 0 11px;}
+#section3 p{line-height: 14px;text-transform: none;font-size: 12px;color: #000000;font-weight: normal;font-family: Arial;padding:8px 0 5px 11px;}
+#section3 .last1{text-transform: none;font-family: Arial;font-size: 12px;color: #003366;font-weight: normal;margin:10px -20 -2px -11px;opacity : 0.5;padding: 4px 0 5px 10px;background: url('bg/backsection.png') no-repeat;}
+#picto{background: url('bg/picto.png') no-repeat 140px 5px;}
+
+/*****************************footer******************************/
+#foot1{width: 950px;}
+#foot1 {height: 379px;display: block;margin-top: 230px;background: url('bg/backfoot.png') no-repeat;}
+#foot1 nav{float: left;display: inline-block;width: 19%;margin: 10px 0 0 0;border-right: 2px solid white;}
+#foot1 >ul >li {float: left;}
+.normal{text-transform: none;font-size: 10px;font-family: Arial;color: #ffffff;padding-left: 37px;line-height: 15px;background: url('bg/picto1.png') no-repeat 29px 2px;}
+.top{text-transform: uppercase;font-size: 12px;font-family: Arial;color: #ffffff;font-weight: bold;padding-left: 30px;line-height: 15px;}
+#cartouche {background: red;width: 347px;}
+span h2{text-transform: uppercase;font-size: 12px;color: #ffffff;padding: 6px 0 6px 30px;}
+#foot1 ul {padding-top: 15px;}
+#foot1 #colonnelast{border: none;}
+#partenaires{display: block;margin-top:17px;width: 950px;height: 45px;border: 1px solid silver;background-color: #ffffff;}
+#partenaires img{display: block;float: left;padding: 8px 4px 8px 5px;}
+#partenaires >ul >li{float: left;}
+.marque {float: left;display: block;padding: 11px 0px 9px 15px;color:#cc0033;font-size: 11px;}
+#lastfoot{display: block;margin-top:17px;width: 950px;height: 30px;border: 1px solid silver;background-color: #ffffff;}
+#lastfoot >ul >li {float: left;}
+#lastfoot >ul >li >a {float: left;font-size: 12px;font-family: Arial;font-weight: normal;padding: 9px 0 9px 11px;color: black;}
+.contact {float: left;font-size: 12px;font-family: Arial;font-weight: normal;padding: 8px 11px 11px 18px;color:black;}
+.face{float: left;margin: -4px 0 0 239px;}
+.twiter{float: left;margin: -4px 0 0 -5px;}
+.rss >a {float: left;font-size: 12px;font-family: Arial;font-weight: normal;margin: 0;color:black;background: url('bg/rss.png') no-repeat 100% 5px;}
+
+
+
+

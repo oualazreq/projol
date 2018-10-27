@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<title>Ma page</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link href="style/main.css" rel="stylesheet">
+	</head>
+	<body>
+		<div id="main">
+			<header>
+				<nav class="headertop">
+					<img src="images/logo.png" class="logo"/>
+					<ul>
+						<li class="aide"><a href="#">aide</a></li>
+						<li class="nav1"><a href="#">suivre ma commande</a></li>
+						<li class="nav1"><a href="#">activer ma ligne</a></li>
+						<li class="nav1"><a href="#">recharger mon mobile</a></li>
+						<li class="monpanier"><a href="#">mon panier (0)</a></li>
+					</ul>
+				</nav>
+				<nav class="headerbottom">
+					<ul>
+						<li ><a class="nav2" href="#">accueil</a></li>
+						<li ><a class="nav2"href="#">nos offres</a></li>
+						<li ><a class="nav2"href="#">les mobiles</a></li>
+						<li ><a class="nav2"href="#">smartphones</a></li>
+						<li ><a class="nav2" href="#">iphone</a></li>
+						<li class="espaceli"><a href="#" class="espaceclient">espace client</a>
+							<nav id="sousmenu1">
+							<ul>
+								<li><a class="navnav2" href="#">mobile</a></li>
+								<li class="adsl"><a class="adsl1" href="#">adsl</a>
+									<nav id="sousmenu2">
+									<ul>
+										<li ><a class="info" href="#">mes infos</a></li>
+										<li ><a class="navnavnav2"href="#">mes factures</a></li>
+										<li ><a class="formule"href="#">ma formule</a></li>
+										<li ><a class="navnavnav2"href="#">mes services</a></li>
+									</ul>
+									</nav>	
+								</li>
+								<li ><a class="navverylounge" href="#">Very lounge</a></li>
+							</ul>
+							</nav>
+						</li>
+						<li><a  class="nav2" href="#">assistance</a></li>	
+					</ul>
+				</nav>
+			</header>
+		    <div id="content">
+		    	<nav id="navcontent">
+		    		<ul>
+						<li ><a class="messagerie" href="#">mes messagerie</a></li>
+						<li ><a class="gerer"href="#">gérer ma <br />messagerie vocale</a></li>
+						<li ><a class="gerer"href="#">gérer mes adresses emails</a></li>
+						<li ><a class="gerer"href="#">gérer  ma<br />téléphonique & internet</a></li>
+					</ul>
+				</nav>
+				<main id="maincontent">
+					<header id="headercontent">ma formule</header>
+					<section id="section1">
+						<h1 class="mail">Consulter ma messagerie mail</h1>
+						<div id="divsection1">
+							<h2>Lorem ipsum dolor sit amet</h2>
+							<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis<br/>egestas. Integer vel nulla ante. Quisque fermentum magna non felis hendrerit ultricies.<br/>
+								Quisque et dui velit, ac feugiat tellus. Ut faucibus viverra accumsan. </p>
+							<input type="button" value="Accéder aux mails" id="acces"/>
+						</div>
+					</section>
+					<section id="section2">
+						<h1 class="vocale">Consulter ma messagerie vocale</h1>
+						<p ><a class="ligne" href="#">Ma ligne 01 45 85 98 xx</a></p>
+						<input type="button" value="actualiser" id="actualiser"/> 
+						<div id="divsection2">
+							<ul>	
+								<li class="l1">Nouveaux messages</li>
+								<li class="l2">Vous avez : 2 nouveau(x) message(s)</li>
+							</ul>
+							<table border="1" width="477px" height="92px">
+								<thead>
+								    <tr>
+									    <th><img src="images/picto1.png"/></th>
+										<th>N° Appelant</th>
+										<th>Date appel</th>
+										<th>Durée</th>
+										<th>Ecouter</th>
+									</tr> 
+					            </thead>
+					            <tbody>
+								    <tr>
+									    <td><img src="images/picto1.png"/></td>
+										<td class="num">06 15 56 54 78</td>
+										<td>02/18/2011</td>
+										<td>2:00</td>
+										<td><img src="images/pictoplay1.jpg"/></td>
+									</tr> 
+								    <tr>
+								    	<td><img src="images/picto2.png"/></td>
+								    	<td>06 15 56 54 78</td>
+										<td>02/18/2011</td>
+										<td>1:56</td>
+										<td><img src="images/pictoplay2.png"/></td>
+									</tr> 
+					            </tbody>
+							</table>
+							<input type="button" value="supprimer" id="supprimer"/> 
+						</div>
+						<div id="div2section2">
+							<p class="p1">Messages archivés</p>
+							<p class="p2">Conservation des messages : tout message sera conservé 15 jours,<br />puis automatiquement supprimé.</p>
+							<p class="p3">Vous n'avez pas de message archivés</p>
+						</div>
+						<p ><a class="last" href="#">gérer la messagerie vocale </a></p>
+					</section> 
+				</main>
+				<aside >
+					<ul>
+						<li><a class="deconnexion" href="#">me deconnecter</a></li>
+						<li><a class="bienvenue" href="#">bienvenue</a></li>
+						<li><a class="nom" href="#">Sarah de fonteville</a></li>
+						<li><a class="tel" href="#">06 13 54 48 74</a></li>
+						<li><a class="adresse" href="#">4200 points VIP</a></li>
+					</ul>
+					<input type="button" value="consulter mes alertes" id="consultation"/> 
+					<ul>
+						<li><a class="info" href="#">Modifier mes infos</a></li>
+						<li><a class="motdepasse" href="#">Modifier mon mot de passe</a></li>
+					</ul>
+					<img src="images/etoile.jpg" class="etoile"/>
+					<p class="espace">RECHERCHE SUR L'ESPACE CLIENT</p><br /><input type="text" name="recherche" class="recherche"></input>
+					<input type="button" value="OK" id="OK"/>
+					<img src="images/etoile.jpg" class="etoile"/>
+					<img src="images/verylounge.jpg" class="verylounge"/>
+					<span id="pimage">
+						<p class="pimage1">Découvrez un nouvel </p>
+						<p class="pimage2"> espace client VERY différent !</p>
+					</span>
+					<ul id="assistant">
+						<li><a class="assistance" href="#">Assistance</a></li>
+						<li><a class="mobile1" href="#">Mon mobile a été volé ou perdu</a></li>
+						<li><a class="mobile" href="#">Mon mobile est cassé</a></li>
+						<li><a class="mobile" href="#">Mon mobile est bloqué</a></li>
+						<li><a class="mobilelast" href="#">Comment recharger mon mobile</a></li>
+					</ul>
+					<ul id="acces">	
+						<li><a class="acceder" href="#">Accéder à l’assistance</a></li>
+						<li><a class="virgin" href="#">VIRGIN MOBILE </a></li>
+					</ul>
+				</aside>
+			</div>
+			<footer>
+			<img src="images/logofoot.png" class="logofoot"/>	
+			<div id="footer">
+			<ul>
+				<li>
+					<ul>
+						<li ><a class="foot1" href="#">nos offres et forfaits</a></li>
+						<li ><a class="foot2" href="#">les mobiles</a></li>
+						<li ><a class="foot2" href="#">les smartphones</a></li>
+						<li ><a class="foot2" href="#">forfait iphone</a></li>
+						<li ><a class="foot2" href="#">forfaits very smartphones</a></li>
+						<li ><a class="foot2" href="#">forfaits liberty SIM & plus</a></li>
+						<li ><a class="foot2" href="#">forfaits bloqués</a></li>
+						<li ><a class="foot2" href="#">le prépayé</a></li>
+						<li ><a class="foot2" href="#">les recharges sur mesure</a></li>
+					</ul>
+				</li>
+				<li>
+					<ul >
+						<li ><a class="foot1"href="#">nos avantages</a></li>
+						<li ><a class="foot2"href="#">offre de remboursement</a></li>
+						<li ><a class="foot2"href="#">parrainage</a></li>
+						<li ><a class="foot2"href="#">Livraison gratuite</a></li>
+						<li ><a class="foot2"href="#">Paiement sécurisé</a></li>
+						<li ><a class="foot2"href="#">Satisfait ou remboursé</a></li>
+						<li ><a class="foot2"href="#">SAV express</a></li>
+						<li class="special"><a class="foot2"href="#">recycler votre ancien <a></li>
+						<li ><a class="foot2"href="#">mobile avec Monextel <a></li> 
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li ><a class="foot1"href="#">pratique</a></li>
+						<li ><a class="foot2"href="#">aide</a></li>
+						<li ><a class="foot2"href="#">suivre ma commande</a></li>
+						<li ><a class="foot2"href="#">activer ma ligne</a></li>
+						<li ><a class="foot2"href="#">Paramétrer mon mobile</a></li>
+						<li ><a class="foot2"href="#">espace client</a></li>
+						<li ><a class="foot2"href="#">handicap et santé </a></li>
+						<li ><a class="foot2"href="#">plan du site</a></li>
+						<li class="special"><a class="foot1"href="#">devenir affilié </a></li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li ><a class="foot1"href="#">nous contacter</a></li>
+						<li ><a class="foot2"href="#">trouver un magasin</a></li>
+						<li ><a class="foot2"href="#">nous contacter par email</a></li>
+						<li ><a class="foot2"href="#">nous contacter par téléphone</a></li>
+						<li ><a class="foot2"href="#">nous rejoindre</a></li>
+						<li class="esps"><a class="foot1"href="#">Informations légales</a></li>
+						<li ><a class="foot2"href="#">conditions générales d'abonnement</a></li>
+						<li ><a class="foot2"href="#">télécharger la fiche tarifaire</a></li>
+						<li ><a class="foot2"href="#">mentions légales</a></li>
+					</ul>
+				</li>
+				<li>
+					<ul>
+						<li ><a class="foot1"href="#">nous connaitre</a></li>
+						<li ><a class="foot2"href="#">qui sommes nous ?</a></li>
+						<li ><a class="foot2"href="#">nos valeurs</a></li>
+						<li ><a class="foot2"href="#">quelques chiffres</a></li>
+						<li ><a class="foot2"href="#">espace presse</a></li>
+						<li class="twiter"><a class="foot2"href="#">suivez nous sur twiter</a></li>
+						<li class="rss"><a class="foot2"href="#">flux RSS</a></li>
+						<li ><a class="foot2"href="#">virgin groupe</a></li>
+					</ul>
+				</li>
+            </ul>
+			</div>
+			</footer> 
+		</div>
+
+
+
+
+
+
+	</body>
+</html>
+
